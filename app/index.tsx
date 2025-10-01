@@ -1,13 +1,12 @@
+import BT05 from "@/components/BT05";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-export default function index() {
+export default function Index() {
   return (
     <SafeAreaView style={styles.container}>
-      <View>
-        <Text>Index</Text>
-      </View>
+      <BT05 />
     </SafeAreaView>
   );
 }
@@ -15,7 +14,5 @@ export default function index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
   },
 });
